@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/home.css"></link>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div id="home1">
+      <h1>hello world</h1>
+      <h3><a href="/sendMessage">send message</a></h3>
+    </div>
+    <p>.</p>
+    <h3>
+      <% for(let i = 0;i<data.length;i++){ %>
+        <div id="home2">
+          <p>id: <%= data[i].id %></p>
+          <p>name: <%= data[i].name %></p>
+          <p>age: <%= data[i].age %></p>
+        </div>
+        <div id="home3"><p>.</p></div>
+      <% } %>
+    </h3>
+  </body>
+</html>
